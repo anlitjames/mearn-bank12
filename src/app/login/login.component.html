@@ -1,0 +1,36 @@
+
+   
+    <div style="height:700px ; background-image:url('./assets/bank3.jpg') ; background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+        <h1 id="h1" >{{header}}</h1>
+    <div class="row">
+        <div class="col-4"></div>
+        
+        <div class="col-4 mt-5">
+            <div class="card mt-5  " style="width: 18rem;background-color:paleturquoise;margin-left: 50px;">
+                <i class="fa-solid fa-house-blank fa-5x"></i>
+                <div class="card-body">
+                    
+                    <h1 class="text-center mt-4 " id="lh1"> Login </h1>
+                    <form action="" class=" container border text-center">
+                        <div class="p-2">
+                            <label for="lacno" style="color:navy ;">Account No</label>
+                            <input (change)="accnoChange($event)" class="form-control" type="text" id="lacno" [placeholder]="accPlaceholder">
+                        </div> 
+                        <div class="p-2">
+                            <label for="lpswd" style="color:navy ;">Password</label>
+                            <input (change)="pswdChange($event)" class="form-control" type="password" id="lpswd" >
+                        </div> 
+                        <div class="p-2">
+                            <input (click)="login()" type="button" class="btn btn-info" value="Login">
+             
+                       </div>
+                    </form>
+                    <p class="mt-2 text-primary">Create Account ?<span> <a href="bregister.html" class="ms-3">Register Now</a></span></p>
+                   </div>
+                </div>
+              
+         </div>
+        <div class="col-4"></div>
+    </div>
+   </div> 
+
